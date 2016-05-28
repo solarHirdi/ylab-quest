@@ -1,0 +1,39 @@
+.tagger {
+
+	&__caption {
+		position: relative;
+		margin-right: 18px;
+		padding-left: 46px;
+		display: inline-block;
+		font-family: 'Neris', sans-serif;
+		font-size: 14px;
+		font-weight: 800;
+		line-height: 30px;
+		letter-spacing: -0.7px;
+		color: #5ca2d3;
+
+		&:before {
+			position: absolute;
+			top: 6px;
+			left: 12px;
+			display: block;
+			content: '';
+			.sprite(@icon-label);
+		}
+	}
+
+	&__list {
+		display: inline-block;
+		line-height: 30px;
+	}
+
+	&__control {
+		min-width: 260px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 13px;
+		font-style: italic;
+		color: #808181;
+		border: none;
+		outline: none;
+	}
+}

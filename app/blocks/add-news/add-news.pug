@@ -1,0 +1,17 @@
+include ../tagger/tagger
+include ../select/select
+
+mixin add-news()
+	section.add-news&attributes(attributes)
+		header.add-news__header
+			h2.add-news__caption Добавление новости
+			span.add-news__close-button
+
+		.add-news__content
+			+tagger().add-news__tagger
+			+select(data.themes).add-news__theme-select
+				| Выберите тему
+			
+			//- 'Select' block in hidden state
+			+select(data.themes).add-news__theme-select.select_hidden
+				| Выберите тему

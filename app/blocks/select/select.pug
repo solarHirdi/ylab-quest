@@ -1,0 +1,10 @@
+mixin select(options)
+	.select&attributes(attributes)
+		input.select__control(type= 'hidden')
+		.select__button
+			.select__caption 
+				block
+			span.select__close-button
+		ul.select__list
+			each option in options
+				li.select__item= option.caption

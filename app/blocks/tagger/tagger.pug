@@ -1,0 +1,6 @@
+mixin tagger()
+	.tagger&attributes(attributes)
+		.tagger__caption Метки:
+		ul.tagger__list
+			li.tagger__item_new
+				input.tagger__control(type= 'text' placeholder='Перечислите темы записи через пробел')

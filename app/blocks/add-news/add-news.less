@@ -1,0 +1,53 @@
+.add-news {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 729px;
+	box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.42); 
+
+
+	&__header {
+		position: relative;
+		padding: 16px 55px 18px 22px;
+		background-color: #5ca2d3;
+	}
+
+	&__caption {
+		position: relative;
+		padding-left: 42px;
+		display: inline-block;
+		font-family: 'Neris', sans-serif;
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 23px;
+		letter-spacing: -0.9px;
+		color: #fff;
+
+		&:before {
+			position: absolute;
+			top: 4px;
+			left: 0;
+			display: block;
+			content: '';
+			.sprite(@icon-conversation)
+		}
+	}
+
+	&__close-button {
+		position: absolute;
+		top: 17px;
+		right: 21px;
+		cursor: pointer;
+		.sprite(@icon-close-big)
+	}
+
+	&__content {
+		padding: 28px 20px 23px 23px;
+	}
+
+	&__tagger {
+		margin-bottom: 5px;
+	}
+	&__theme-select {
+		margin-bottom: 10px;
+	}
+}

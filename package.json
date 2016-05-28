@@ -1,0 +1,28 @@
+{
+  "name": "ylab-quest",
+  "version": "1.0.0",
+  "description": "YLab Brief Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arkadiy A.Davydov",
+  "license": "ISC",
+  "devDependencies": {
+    "fs": "0.0.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cached": "^1.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-data": "^1.2.1",
+    "gulp-filter": "^4.0.0",
+    "gulp-if": "^2.0.1",
+    "gulp-less": "^3.1.0",
+    "gulp-pug": "^3.0.2",
+    "gulp-pug-inheritance": "^0.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp.spritesmith": "^6.2.1",
+    "less-plugin-glob": "^1.1.1",
+    "run-sequence": "^1.2.1"
+  }
+}
