@@ -14,7 +14,7 @@ var data = require('gulp-data');
 var spritesmith = require('gulp.spritesmith');
 
 gulp.task('copy', function() {
-	gulp.src(['app/resources/**/*', '!sprite/**/*'])
+	gulp.src(['app/resources/**/*', '!app/resources/{sprite,sprite/**/*}'])
 		.pipe(gulp.dest('dist/assets'));
 });
 
